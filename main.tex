@@ -1,0 +1,63 @@
+%!TEX program = xelatex
+\pdfminorversion=4 % required for impressive presentation tool
+\documentclass[xcolor=x11names,dvipsnames,aspectratio=169]{beamer}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{flowchart}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{tikz}
+
+\usetikzlibrary{
+  shapes.misc,positioning,arrows,decorations.markings,shapes.arrows
+}
+\tikzset{set/.style={draw,circle,inner sep=0pt,align=center}}
+\tikzset{brace/.style={decorate, decoration={brace}},
+  brace mirrored/.style={decorate, decoration={brace,mirror}}}
+	\pgfdeclarelayer{background}
+	\pgfsetlayers{background,main}
+
+  %\usepackage[
+  %  lambda, advantage, operators, sets, adversary, landau, probability, notions,
+  %  logic, ff, mm, primitives, events, complexity, asymptotics, keys
+  %]{cryptocode}
+
+\usetheme{Dart}
+
+\title{Intro to SSH}
+\subtitle{Telnet is no more!}
+\author{\href{https://markussvan.com/}{Maroko1218}}
+\date{2024/01/26}
+
+\begin{document}
+	\frame{\titlepage}
+
+\setcounter{showSlideNumbers}{0}
+
+  \begin{frame}{The ``\alert{Slide Title}''}
+    \framesubtitle{framesubtitle \url{https://www.example.com}}
+    Lorem Ipsum
+  \end{frame}
+
+\section{Section}
+
+\begin{frame}{Slide 2}
+  \framesubtitle{\url{http://2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion}}
+  \begin{columns}
+    \begin{column}{0.44\textwidth}
+      \begin{center}
+        %\includegraphics<1>[width=1.0\textwidth]{img/twitter-0}%
+        %\includegraphics<2>[width=1.0\textwidth]{img/twitter-1}%
+        %\includegraphics<3>[width=1.0\textwidth]{img/twitter-2}%
+      \end{center}
+    \end{column}
+    \begin{column}{0.57\textwidth}
+      \begin{itemize}
+        \item Lorem Ipsum
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+  \backmatter
+
+\end{document}
